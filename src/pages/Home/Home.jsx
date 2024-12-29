@@ -3,7 +3,7 @@ import { Hero } from "./Hero";
 import { HeroOld } from "./HeroOld";
 import { Header } from "../../components/layouts/Header";
 import { Welcome } from "./Welcome";
-import { Cities } from "./Cities";
+
 import { FeaturedDestinations } from "./FeaturedDestinations";
 import { UpcomingEvents } from "./UpcomingEvents";
 import { MapView } from "./MapView";
@@ -27,7 +27,7 @@ export const Home = () => {
       <Welcome />
       <MapView />
       <TravelPackages />
-      <Cities />
+    
      
       <UpcomingEvents />
      

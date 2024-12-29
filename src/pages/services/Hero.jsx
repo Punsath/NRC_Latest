@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSpring, animated, useInView } from "react-spring";
-import hero from "./../../assets/images/services/service-hero.jpg";
+import hero from "./../../assets/images/services/service-hero.jpeg";
 
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -36,23 +36,27 @@ export const Hero = () => {
   }, [inView]);
 
   return (
-    <>
-      <section
-        ref={ref}
-        className="overflow-hidden w-full h-[340px] md:h-[600px] relative items-center justify-center flex"
-      >
-        <div className="absolute top-0 left-0 w-full z-50 bg-[#0c2051]"></div>
-        <img src={hero} className="w-full h-[600px] object-cover" alt="" />
+    <section
+      ref={ref}
+      className="overflow-hidden w-full h-[340px] md:h-[600px] relative items-center justify-center flex"
+    >
+      <div className="absolute top-0 left-0 w-full z-50 bg-[#0c2051]"></div>
+      
+      {/* Hero image */}
+      <img src={hero} className="w-full h-[600px] object-cover" alt="" />
 
-        <animated.div
-          style={fadeScreen}
-          className="absolute w-full md:ml-44 h-[600px] flex items-center justify-start gap-[30px] px-[20px]"
-        >
-          <div className="text-left text-white font-Montserrat   font-[700] text-[30px] md:text-[60px]  leading-[70px]">
-            Services
-          </div>
-        </animated.div>
-      </section>
-    </>
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/30"></div>
+
+      {/* Animated text */}
+      <animated.div
+        style={fadeScreen}
+        className="absolute w-full md:ml-44 h-[600px] flex items-center justify-start gap-[30px] px-[20px]"
+      >
+        <div className="text-left text-white font-Montserrat font-[700] text-[30px] md:text-[60px] leading-[70px]">
+        Services
+        </div>
+      </animated.div>
+    </section>
   );
 };

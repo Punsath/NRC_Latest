@@ -4,6 +4,7 @@ import { Header } from "../../components/layouts/Header";
 import { Description } from "./Description";
 import { Mission } from "./Mission";
 import { OurTeam } from "./OurTeam";
+import { Works } from "./Work";
 import { Partners } from "./Partners";
 import { Footer } from "../../components/layouts/Footer";
 
@@ -20,6 +21,7 @@ export const AboutUs = () => {
       </div>
       <Description />
       <Mission />
+      <Works/>
       <OurTeam />
       {/* <Partners /> */}
       <Footer />

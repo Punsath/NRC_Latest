@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSpring, animated, useInView } from "react-spring";
-import hero from "./../../assets/images/aboutus/aboutushero.jpeg";
+import hero from "./../../assets/images/aboutus/heroaboutus.jpeg";
 
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -46,7 +46,7 @@ export const Hero = () => {
       <img src={hero} className="w-full h-[600px] object-cover" alt="" />
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/10"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/35 to-black/35"></div>
 
       {/* Animated text */}
       <animated.div

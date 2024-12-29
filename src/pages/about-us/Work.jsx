@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion"
 import { cities } from "../../utils/dataArrays"; // Assuming cities is an array with { title, image }
 
-export const Cities = () => {
+export const Works = () => {
   const [activeSlide, setActiveSlide] = useState(0); // State to track the active slide
   const desktopSliderRef = useRef(null); // Reference to the desktop Slider component
   const mobileSliderRef = useRef(null); // Reference to the mobile Slider component
@@ -227,20 +227,7 @@ export const Cities = () => {
       <p className="font-montserrat text-[#004066] text-xl font-bold">{65}</p>
     </motion.div>
 
-    {/* Drop-off Bags */}
-    <motion.div
-      className="bg-white border-2 border-[#E3F2FD] rounded-lg shadow-lg p-8 flex flex-col items-center text-center transition-all hover:shadow-xl hover:border-[#004066]"
-      initial={{ opacity: 0, scale: 0.9 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-      viewport={{ once: true }}
-    >
-      <div className="bg-[#004066] text-white rounded-full w-16 h-16 flex items-center justify-center text-3xl mb-6">
-        🛍️
-      </div>
-      <h3 className="font-montserrat font-semibold text-[#004066] text-2xl mb-2">Drop-off Bags</h3>
-      <p className="font-montserrat text-[#004066] text-xl font-bold">{760}</p>
-    </motion.div>
+ 
 
     {/* Electric Bicycles */}
     <motion.div

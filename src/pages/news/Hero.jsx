@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSpring, animated, useInView } from "react-spring";
-import hero from "./../../assets/images/news/hero.jpg";
+import hero from "./../../assets/images/news/heronews.jpeg";
 
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(true);
