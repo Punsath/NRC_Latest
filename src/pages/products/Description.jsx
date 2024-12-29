@@ -1,4 +1,6 @@
 import React from "react";
+import picture1 from "./../../assets/images/products/picture1.png";
+import picture2 from "./../../assets/images/products/picture3.png";
 
 export const Description = () => {
   return (
@@ -24,10 +26,33 @@ export const Description = () => {
         {/* Description */}
         <div className="md:w-[60%]">
           <p className="text-gray-700 font-nunito text-[16px] md:text-[18px] font-[400] leading-[30px]">
-            NRC recycles waste into innovative new materials, transforming the
-            way we think of waste and what can be done with it. Today, we recycle
-            tonnages of such material every month, diverting it from landfills
-            and oceans. NRC recycled materials are divided into two main groups:
+          At NRC, we revolutionize waste management by transforming post-consumer and post-industrial waste into innovative materials that contribute to a sustainable future. Through advanced recycling technologies and practices, we process significant volumes of plastic waste and other recyclables each month, effectively diverting them from landfills and oceans. Our commitment to environmental stewardship drives our mission to create value from waste while reducing ecological footprints.
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-8 grid md:grid-cols-2 grid-cols-1 gap-8">
+        {/* Image 1 */}
+        <div className="flex flex-col items-center">
+          <img
+            src={picture1}
+            alt="Image Description 1"
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+          <p className="mt-4 text-center text-gray-700 font-nunito text-[16px] leading-[26px]">
+          NRC buys various types of post-consumer and post-industrial waste  
+          </p>
+        </div>
+
+        {/* Image 2 */}
+        <div className="flex flex-col items-center">
+          <img
+            src={picture2}
+            alt="Image Description 2"
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+          <p className="mt-4 text-center text-gray-700 font-nunito text-[16px] leading-[26px]">
+          NRC recycled various types of post-consumer and post-industrial plastic waste 
           </p>
         </div>
       </div>
