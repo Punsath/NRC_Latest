@@ -4,6 +4,10 @@ import { Hero } from "./Hero";
 import { NewsPage } from "./NewsPage";
 import React, { useEffect } from "react";
 
+
+import { Description } from "./Description";
+import { Nav } from "./Nav";
+
 export const News = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -12,7 +16,12 @@ export const News = () => {
     <>
       <Header />
       <Hero />
-      <NewsPage />
+
+      <Description />
+      <Nav />
+
+      
+ 
       <Footer />
     </>
   );

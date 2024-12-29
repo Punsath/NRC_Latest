@@ -16,14 +16,7 @@ export const NewsContent1 = () => {
 
           <div className="font-nunito font-normal text-[16px] leading-[28px] text-[#333333] gap-6 flex flex-col mb-12">
             <p>
-            A BLUECAP WARRIOR has emerged in the
-bustling coastal town of Beruwala, where the
-fishery communities are actively operating.
-Meet Anulawathi, known to many as Rani, a
-woman who cares the boats day and night.
-Rani's connection to the beach began when
-the team NRC met her at the Beach Cleanup
-in early June.
+            A BLUECAP WARRIOR has emerged in the bustling coastal town of Beruwala, where the fishery communities are actively operating.Meet Anulawathi, known to many as Rani, awoman who cares the boats day and night.Rani's connection to the beach began when the team NRC met her at the Beach Cleanup in early June.
 
             </p>
             <p>
