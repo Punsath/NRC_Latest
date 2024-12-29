@@ -1,0 +1,287 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  @apply relative overflow-x-hidden bg-white font-montserrat;
+}
+
+@keyframes pulse-circle {
+  from {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+}
+
+.fade-up-enter-active {
+  transition: opacity 0.5s, transform 0.8s;
+}
+
+.fade-up-enter-active-large {
+  transition: opacity 0.5s, transform 0.8s;
+}
+
+.fade-up-enter-from {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.fade-up-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.web-button {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in;
+  color: #324589;
+}
+.web-button:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.service-card {
+  background-color: rgba(241, 241, 241, 1);
+  transition: background-color 0.3s ease-in;
+}
+
+.service-card:hover {
+  background: linear-gradient(
+    144.01deg,
+    #59b8ff 1.76%,
+    rgba(38, 252, 118, 0.44) 100%
+  );
+}
+
+.process-card-color {
+  background: linear-gradient(
+    144.01deg,
+    #59b8ff 1.76%,
+    #59b8ff 1.77%,
+    rgba(38, 252, 118, 0.44) 100%
+  );
+}
+
+.faq-gradient {
+  background: linear-gradient(122.24deg, #010100 6.29%, #324589 83.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.font-border {
+  text-shadow: -2px -2px 0 #324589, 2px -2px 0 #324589, -2px 2px 0 #324589,
+    2px 2px 0 #324589;
+}
+.font-border-hover {
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+    2px 2px 0 #fff;
+}
+
+.contact-input {
+  border: none;
+  border-bottom: 1px solid #27325b; /* Set the color of the bottom border */
+  outline: none;
+}
+.contact-input:focus {
+  border-bottom: 1px solid #000; /* Set the color of the bottom border */
+}
+
+.contact-input::placeholder {
+  @apply font-outfit font-normal text-[18px] leading-[30px];
+}
+
+.contact-input:focus::placeholder {
+  color: #000000; /* Change the color to your desired focus placeholder color */
+}
+
+.contact-button:hover {
+  background-color: #461058;
+  color: white;
+}
+.contact-button {
+  background-color: #000000;
+  transition: background-color 0.3s ease-in;
+}
+
+.nav-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.read-more {
+  position: relative;
+  overflow: hidden;
+}
+
+.read-more::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff1d03;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.read-more:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity as needed */
+}
+
+.loader {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: 4px solid #461058;
+  top: 50%;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #461058;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
+
+.process-item {
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.hexagon {
+  width: 100px;
+  height: 55px;
+  background-color: transparent;
+  position: relative;
+  border-left: solid 50px #6c5ce7;
+  border-right: solid 50px #6c5ce7;
+  border-top: solid 30px transparent;
+  border-bottom: solid 30px transparent;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-montserrat {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+@layer components {
+  .font-outfit {
+    font-family: "Outfit", sans-serif;
+  }
+}
+
+.mySwiper .swiper-wrapper {
+  @apply flex items-start;
+}
+
+.mySwiper {
+  @apply w-full rounded-md;
+}
+
+.hide-scrollbar {
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel .thumbnail .relative {
+  transition: transform 0.5s ease;
+}
+
+.carousel .thumbnail .relative.scale-125 {
+  transform: scale(1.25);
+  z-index: 50;
+}
+
+.carousel .relative {
+  transition: opacity 0.5s ease;
+}
+
+.carousel .relative.opacity-100 {
+  opacity: 1;
+}
+
+.carousel .relative.opacity-0 {
+  opacity: 0;
+}
+
+.swal2-container {
+  z-index: 10000;
+}
+
+.Toastify__toast-container {
+  z-index: 10000 !important;
+}
