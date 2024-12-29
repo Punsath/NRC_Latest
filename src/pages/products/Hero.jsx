@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSpring, animated, useInView } from "react-spring";
-import hero from "./../../assets/images/products/product-hero.jpg";
+import hero from "./../../assets/images/products/product-hero1.jpeg";
 
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -54,7 +54,7 @@ export const Hero = () => {
         className="absolute w-full md:ml-44 h-[600px] flex items-center justify-start gap-[30px] px-[20px]"
       >
         <div className="text-left text-white font-Montserrat font-[700] text-[30px] md:text-[60px] leading-[70px]">
-          Resources and Products
+          Products
         </div>
       </animated.div>
     </section>
