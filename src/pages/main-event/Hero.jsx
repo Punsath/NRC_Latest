@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSpring, animated, useInView } from "react-spring";
-import hero from "./../../assets/images/main-events/main-event-hero2.jpeg";
+import hero from "./../../assets/images/main-events/main-event-heronew.png";
 
 export const Hero = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -42,7 +42,7 @@ export const Hero = () => {
         className="overflow-hidden w-full h-[340px] md:h-[600px] relative items-center justify-center flex"
       >
         {/* Lighter gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/50 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/60 z-10"></div>
 
         {/* Background image */}
         <img src={hero} className="w-full h-[600px] object-cover" alt="Main Events" />
@@ -53,7 +53,7 @@ export const Hero = () => {
           className="absolute w-full md:ml-44 h-[600px] flex items-center justify-start gap-[30px] px-[20px] z-20"
         >
           <div className="text-left text-white font-Montserrat font-[700] text-[30px] md:text-[60px] leading-[70px]">
-            Main Events
+            Project BLUECAP
           </div>
         </animated.div>
       </section>

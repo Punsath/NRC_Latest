@@ -6,18 +6,23 @@ export const Cwaste = () => {
     <div className="px-4 md:px-[6%]">
 
       {/* CWASTE Section */}
-      <div className="text-center md:text-left mt-8">
-        <h2 className="text-[#004066] font-Montserrat md:text-[40px] text-[32px] font-[700] leading-[70px]">
-          CWASTE: Transforming Ocean Waste into Valuable Products
-        </h2>
-        <p className="text-gray-700 font-nunito text-[18px] md:text-[20px] font-[400] leading-[30px] mt-6 max-w-[900px] mx-auto">
-        CWASTE, the flagship brand of NRC, embodies our commitment to sustainability and environmental conservation. The name "CWASTE" signifies our dedication to collecting and repurposing waste materials recovered from coastlines, trash barriers, waterways, and the ocean.
-Under the CWASTE brand, we transform these discarded materials into innovative, high-quality products that not only contribute to a circular economy but also inspire responsible consumption and waste management. By turning environmental challenges into opportunities, CWASTE represents a brighter, cleaner future for our planet.
-        </p>
-      </div>
+      <div className="text-center md:text-left mt-8 px-6 py-8">
+  <h2 className="text-[#004066] font-Montserrat md:text-[33px] text-[32px] font-[700] leading-[48px]">
+    CWASTE: Transforming Ocean Waste into Valuable Products
+  </h2>
+  <p className="text-[#494949] font-nunito text-[18px] md:text-[18px] font-[400] leading-[28px] mt-6 max-w-[900px] mx-auto">
+    CWASTE, the flagship brand of NRC, embodies our commitment to sustainability and environmental conservation. The name "CWASTE" signifies our dedication to collecting and repurposing waste materials recovered from coastlines, trash barriers, waterways, and the ocean.
+    <br />
+    <br />
+    Under the CWASTE brand, we transform these discarded materials into innovative, high-quality products that contribute to a circular economy and promote responsible consumption and waste management. CWASTE represents a cleaner, brighter future for our planet.
+  </p>
+  
+</div>
+
+
 
       {/* NRC Products Section */}
-      <div className="bg-[#004066] py-12 mt-16 rounded-xl">
+      <div className="bg-gradient-to-r from-[#004066] to-[#072938] py-12 mt-16 rounded-xl">
         <div className="text-center">
           <h2 className="text-white font-Montserrat text-[28px] font-[700] mb-8">
             NRC Products: Sustainable Solutions Made from Recycled Materials

@@ -45,7 +45,7 @@ import mosque from "../assets/images/colombo-similar-attractions/mosque.png";
 import postCity from "../assets/images/colombo-similar-attractions/post-city.png";
 
 import wildLife from "../assets/images/hero/Excellence.png";
-import culture from "../assets/images/hero/culture.jpg";
+import culture from "../assets/images/hero/culture1.jpeg";
 import ruins from "../assets/images/hero/ruins.jpg";
 import cuisines from "../assets/images/hero/cuisines1.jpeg";
 
